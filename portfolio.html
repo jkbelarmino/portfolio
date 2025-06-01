@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Name Goes Here | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="profile-container">
+            <a href="index.html"><img src="profile.jpg" alt="Jean" class="profile-picture"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="index.html#skills"><i class="fa-solid fa-lightbulb"></i> Skills</a></li>
+                <li><a href="index.html#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="portfolio.html"><i class="fa-solid fa-folder-open"></i> Portfolio</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><a href="SampleResumeTemplate.pdf"><i class="fa-solid fa-download"></i> Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>My Portfolio</h1>
+            <p>Showcasing my projects and contributions.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <h2><i class="fa-solid fa-project-diagram"></i>SIDE PROJECTS & TECHNICAL INITIATIVES:</h2>
+        <p>Here are some of the tools, automation scripts, and projects I've developed over the years.</p>
+        <ul>
+            <li><strong>Chrome Autofill Lite Extension</strong> – 2025<br>
+Enhances browser autofill workflows.</li>
+
+<li><strong>Siren N/SOC Alerts</strong> – 2020<br>
+Automation tool for SOC ticketing systems.</li>
+
+<li><strong>SupportHelp</strong> – 2019<br>
+Internal tool for streamlining support processes.</li>
+
+<li><strong>IPG TS Notation Template</strong> – 2014<br>
+Custom notation framework for technical documentation.</li>
+
+<li><strong>Flixster Firefox Plugin</strong> – 2008<br>
+Browser extension for seamless movie discovery.</li>
+
+<li><strong>CBT Notation Template</strong> – 2005<br>
+Standardized notation format for the Callback Team.</li>
+
+        </ul>
+    </section>
+
+    <section id="projects2" class="content-section">
+        <h2><i class="fa-solid fa-folder-open"></i> MY PROJECTS</h2>
+        <p>Detailed showcase of my work, including screenshots, descriptions, and code samples.</p>
+
+        <table class="portfolio-table">
+            <tr>
+                <th>Project Name</th>
+                <th>Screenshot</th>
+                <th>Uses</th>
+            </tr>
+            <tr>
+                <td>1. Sample Project</td>
+                <td rowspan="2"><img src="sample1.jpg" alt="Project Screenshot" width="150" height="150"></td>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+                <td>Project Description</td>
+                <td colspan="2">This is a placeholder description for the project.</td>
+            </tr>
+            <tr>
+                <td>2. Another Project</td>
+                <td rowspan="2"><img src="sample1.jpg" alt="Project Screenshot" width="150" height="150"></td>
+                <td>Python, Flask, SQL</td>
+            </tr>
+            <tr>
+                <td>Project Description</td>
+                <td colspan="2">This project implements automation using Python.</td>
+            </tr>
+
+            <tr>
+                <td>3. Third Project</td>
+                <td rowspan="2"><img src="sample1.jpg" alt="Project Screenshot" width="150" height="150"></td>
+                <td>Java, Spring Boot</td>
+            </tr>
+            <tr>
+                <td>Project Description</td>
+                <td colspan="2">This project is a web application built with Java.</td>
+            </tr>
+            <tr>
+                <td>4. Fourth Project</td>
+                <td rowspan="2"><img src="sample1.jpg" alt="Project Screenshot" width="150" height="150"></td>
+                <td>React, Node.js</td> 
+            </tr>
+            <tr>
+                <td>Project Description</td>
+                <td colspan="2">This project is a full-stack application using React and Node.js.</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Full Name Goes Here. All Rights Reserved.</p>
+    </footer>
+
+    <button id="scrollToTop" class="floating-button">↑ Top</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("scrollToTop").addEventListener("click", function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* General Typography & Layout */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') center/cover no-repeat fixed;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Profile Image */
+.profile-picture-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Profile Image - Small & Round */
+.profile-picture {
+    width: 50px; /* Make it smaller */
+    height: 50px;
+    border-radius: 50%; /* Make it round */
+    object-fit: cover;
+    margin-right: 10px;
+    border: 2px solid white; /* Optional border for better contrast */
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 74, 173, 0.9);
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; /* Centers icon with text */
+    gap: 8px; /* Adds spacing between the icon and text */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.nav-links a i {
+    font-size: 20px; /* Ensures icons are balanced */
+}
+
+
+.nav-links a:hover {
+    color: #FFC107;
+}
+
+/* Section Styling */
+.content-section {
+    padding: 80px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #004AAD;
+    display: flex;
+    align-items: center;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('herosection.png');
+    background-color: rgba(11, 35, 66, 0.85);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Text Over Image */
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+    font-size: 22px;
+    color: #e0e0e0;
+}
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0071E3;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #005bb5;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 30px;
+    background: #004AAD;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002D5B;
+    color: white;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .content-section {
+        padding: 30px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* Portfolio Table Styling */
+.portfolio-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.portfolio-table th, .portfolio-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.portfolio-table th {
+    background-color: #004AAD;
+    color: white;
+    font-weight: 600;
+}
+
+.portfolio-table img {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
