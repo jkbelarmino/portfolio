@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name Here | Resume Download</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="profile-container">
+        <a href="index.html"><img src="profile.jpg" alt="Jean" class="profile-picture"></a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="index.html#skills"><i class="fa-solid fa-lightbulb"></i> Skills</a></li>
+            <li><a href="index.html#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+            <li><a href="portfolio.html"><i class="fa-solid fa-folder-open"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="#" id="resumeLink"><i class="fa-solid fa-download"></i> Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="login-section" class="content-section">
+    <h2>Login to Download My Resume</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p id="error-message"></p>
+</section>
+
+<section id="resume-section" class="content-section" style="display: none;">
+    <h2><i class="fa-solid fa-envelope"></i> My Resume</h2>
+    <p>You can now download my resume.</p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn Profile</a></p>
+    <a href="SampleResumeTemplate.pdf" class="btn"><i class="fa-solid fa-download"></i> Download Resume</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your Name Here. All Rights Reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
