@@ -10,6 +10,29 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDFlZY9OMaV6xnGVLmQzVtmZIv5iFxeI0Q",
+    authDomain: "resume-login-1f2f7.firebaseapp.com",
+    projectId: "resume-login-1f2f7",
+    storageBucket: "resume-login-1f2f7.firebasestorage.app",
+    messagingSenderId: "968326183137",
+    appId: "1:968326183137:web:e07ef115ff3ce456485fa0",
+    measurementId: "G-5QZM6MT8KK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 <header class="navbar">
     <div class="profile-container">
@@ -42,14 +65,13 @@
 <section id="resume-section" class="content-section" style="display: none;">
     <h2><i class="fa-solid fa-envelope"></i> My Resume</h2>
     <p>You can now download my resume.</p>
-    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn Profile</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in" target="_blank">LinkedIn Profile</a></p>
     <a href="SampleResumeTemplate.pdf" class="btn"><i class="fa-solid fa-download"></i> Download Resume</a>
 </section>
 
 <footer>
     <p>&copy; 2025 Your Name Here. All Rights Reserved.</p>
 </footer>
-
 
 
 </body>
