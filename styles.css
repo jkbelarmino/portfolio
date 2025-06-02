@@ -1,3 +1,4 @@
+/* OLD CSS */
 /* General Typography & Layout */
 body {
     font-family: "Inter", Arial, sans-serif;
@@ -233,4 +234,71 @@ footer {
 /* Add whitespace styling */
 .whitespace {
     height: 20px;
+}
+
+
+/*ADDED NEW CODE*/
+/* Login Section */
+#login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Form */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#loginForm label {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#loginForm input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #004AAD;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login Button */
+#loginForm button {
+    width: 90%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #004AAD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#loginForm button:hover {
+    background-color: #0071E3;
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Section Padding */
+#about, #education, #certifications, #skills, #experience, #projects {
+    padding-top: 80px; /* Adjust based on header height */
 }
