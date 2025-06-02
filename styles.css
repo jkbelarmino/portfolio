@@ -185,3 +185,52 @@ footer {
     color: white;
     font-size: 16px;
 }
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Default: One button per row */
+    width: 100%;
+    gap: 10px; /* Adds spacing between buttons */
+    align-items: center;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #0071E3; /* Blue */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%; /* Full width on mobile */
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #005bb5; /* Darker blue */
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* Tablet & PC View */
+@media (min-width: 768px) {
+    .button-container {
+        flex-direction: row; /* Align buttons in a single row */
+        justify-content: space-between;
+    }
+
+    .btn {
+        width: auto; /* Auto width for row layout */
+        flex: 1; /* Makes buttons equal in size */
+        margin-bottom: 0;
+    }
+}
+
+/* Add whitespace styling */
+.whitespace {
+    height: 20px;
+}
